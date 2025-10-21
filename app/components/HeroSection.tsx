@@ -38,7 +38,7 @@ export default function HeroSection({ onScrollToWork }: HeroSectionProps) {
                 {/* Profile Image - Mobile */}
                 <div className="relative w-64 h-64 sm:w-72 sm:h-72 overflow-hidden shadow-xl z-10">
                   <Image 
-                    src="/aadvait-sf.png" 
+                    src="/aadvait-sf.jpg" 
                     alt="Aadvait Profile" 
                     width={320}
                     height={320}
@@ -124,7 +124,7 @@ export default function HeroSection({ onScrollToWork }: HeroSectionProps) {
             {/* Profile Image - Desktop - Much Bigger */}
             <div className="relative w-96 h-96 xl:w-[28rem] xl:h-[28rem] overflow-hidden shadow-xl z-10">
               <Image 
-                src="/aadvait-sf.png" 
+                src="/aadvait-sf.jpg" 
                 alt="Aadvait Profile" 
                 width={448}
                 height={448}
