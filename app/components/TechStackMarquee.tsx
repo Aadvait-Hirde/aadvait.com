@@ -22,19 +22,25 @@ export default function TechStackMarquee() {
   ];
 
   return (
-    <div className="w-full mt-8 overflow-hidden">
+    <div className="relative w-full mt-8 overflow-hidden py-4">
+      {/* Left fade */}
+      <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-[#e8cca1] to-transparent z-10 pointer-events-none" />
+      
+      {/* Right fade */}
+      <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-[#e8cca1] to-transparent z-10 pointer-events-none" />
+      
       <Marquee className="[--duration:40s]">
         {techLogos.map((logo, index) => (
           <div
             key={index}
-            className="flex items-center justify-center px-4"
+            className="flex items-center justify-center px-6"
           >
             <Image 
               src={logo} 
               alt={`Technology ${index + 1}`}
-              width={40}
-              height={40}
-              className="h-8 w-auto object-contain hover:scale-110 transition-transform"
+              width={60}
+              height={60}
+              className="h-12 w-auto object-contain hover:scale-110 transition-transform"
             />
           </div>
         ))}

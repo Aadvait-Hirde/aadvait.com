@@ -55,7 +55,7 @@ export default function HeroSection({ onScrollToWork }: HeroSectionProps) {
 
             {/* Text Content */}
             <h1 className="text-black text-5xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight text-left">
-              Full-Stack Developer
+              Hey there, <br/>I'm <span className="text-[#3f031c]">Aadvait!</span>
             </h1>
             
             <p className="text-black/90 text-lg md:text-lg md:pr-8 mb-12 text-left">
@@ -74,15 +74,17 @@ export default function HeroSection({ onScrollToWork }: HeroSectionProps) {
                   Work & Projects
                 </button>
               </div>
-              <div className="relative inline-block group mb-3 ml-9">
-                {/* Frame - Bottom Left - Behind button */}
-                <div className="absolute -bottom-3 -right-3 w-full h-full border-2 border-white" />
-                <button 
-                  onClick={onScrollToWork}
-                  className="relative bg-black text-white px-8 py-4 font-semibold hover:scale-105 active:scale-95 transition-all cursor-pointer"
-                >
-                  Resume
-                 </button>
+               <div className="relative inline-block group mb-3 ml-9">
+                 {/* Frame - Bottom Left - Behind button */}
+                 <div className="absolute -bottom-3 -right-3 w-full h-full border-2 border-white" />
+                 <a 
+                   href="/Aadvait-Hirde-Resume.pdf"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   className="relative bg-black text-white px-8 py-4 font-semibold hover:scale-105 active:scale-95 transition-all cursor-pointer inline-block"
+                 >
+                   Resume
+                 </a>
                </div>
 
                {/* Tech Stack Marquee */}

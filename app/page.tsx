@@ -54,7 +54,8 @@ export default function Home() {
       />
       
       <HamburgerMenu 
-        onClick={() => setIsMenuOpen(true)} 
+        onClick={() => setIsMenuOpen(true)}
+        isOpen={isMenuOpen}
       />
       
       <ScrollIndicator

@@ -10,8 +10,8 @@ const raleway = Raleway({
 });
 
 export const metadata: Metadata = {
-  title: "Aadvait - Full-stack Developer",
-  description: "Full-stack developer crafting solid and scalable products with great user experiences.",
+  title: "aadvait.com",
+  description: "Aadvait's portfolio website! I'm a web developer and AI researcher with experience building scalable products and working with early-stage startups.",
   icons: {
     icon: '/a-favicon.png',
   },
