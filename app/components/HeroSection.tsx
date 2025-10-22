@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import TechStackMarquee from './TechStackMarquee';
 
 interface HeroSectionProps {
   onScrollToWork: () => void;
@@ -81,13 +82,16 @@ export default function HeroSection({ onScrollToWork }: HeroSectionProps) {
                   className="relative bg-black text-white px-8 py-4 font-semibold hover:scale-105 active:scale-95 transition-all cursor-pointer"
                 >
                   Resume
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
+                 </button>
+               </div>
 
-        {/* E-signature - Bottom Right */}
+               {/* Tech Stack Marquee */}
+               <TechStackMarquee />
+             </div>
+           </div>
+         </div>
+
+         {/* E-signature - Bottom Right */}
         <div className="absolute bottom-35 right-15 hidden lg:block opacity-100">
           <Image 
             src="/aadvait-esign.png" 
