@@ -9,11 +9,11 @@ interface HeroSectionProps {
 export default function HeroSection({ onScrollToWork }: HeroSectionProps) {
   return (
     <section id="hero" className="relative min-h-screen flex flex-col lg:flex-row">
-      {/* Left Side - Orange */}
-      <div className="relative w-full lg:w-[60%] bg-[#ff6b35] flex flex-col">
+      {/* Left Side - Beige - Wider */}
+      <div className="relative w-full lg:w-[70%] bg-[#e8cca1] flex flex-col">
         {/* Main Content */}
-        <div className="flex-1 flex flex-col justify-center px-8 md:px-12 lg:px-16 xl:px-24 py-24 lg:py-0">
-          <div className="w-full max-w-xl mx-auto lg:mx-0">
+        <div className="flex-1 flex flex-col justify-center px-8 md:px-12 lg:px-16 xl:px-32 2xl:px-40 py-24 lg:py-0">
+          <div className="w-full max-w-xl mx-auto lg:mx-0 lg:ml-12">
             {/* Mobile/Tablet Image - Shows only below lg breakpoint */}
             <div className="lg:hidden mb-12 flex justify-center">
               <div className="relative">
@@ -21,7 +21,7 @@ export default function HeroSection({ onScrollToWork }: HeroSectionProps) {
                 <div className="absolute -top-8 -left-8 z-0">
                   <div className="grid grid-cols-15 gap-2">
                     {Array.from({ length: 225 }).map((_, i) => (
-                      <div key={`mobile-top-${i}`} className="w-0.5 h-0.5 bg-black/20 rounded-full" />
+                      <div key={`mobile-top-${i}`} className="w-0.5 h-0.5 bg-[#3f031c]/20 rounded-full" />
                     ))}
                   </div>
                 </div>
@@ -30,7 +30,7 @@ export default function HeroSection({ onScrollToWork }: HeroSectionProps) {
                 <div className="absolute -bottom-8 -right-8 z-0">
                   <div className="grid grid-cols-15 gap-2">
                     {Array.from({ length: 225 }).map((_, i) => (
-                      <div key={`mobile-bottom-${i}`} className="w-0.5 h-0.5 bg-black/20 rounded-full" />
+                      <div key={`mobile-bottom-${i}`} className="w-0.5 h-0.5 bg-[#3f031c]/20 rounded-full" />
                     ))}
                   </div>
                 </div>
@@ -38,7 +38,7 @@ export default function HeroSection({ onScrollToWork }: HeroSectionProps) {
                 {/* Profile Image - Mobile */}
                 <div className="relative w-64 h-64 sm:w-72 sm:h-72 overflow-hidden shadow-xl z-10">
                   <Image 
-                    src="/aadvait-sf.jpg" 
+                    src="/aadvait-hero.png" 
                     alt="Aadvait Profile" 
                     width={320}
                     height={320}
@@ -47,8 +47,8 @@ export default function HeroSection({ onScrollToWork }: HeroSectionProps) {
                   />
                 </div>
 
-                {/* Border Frame - Bottom Right Position */}
-                <div className="absolute right-3 bottom-3 w-64 h-64 sm:w-72 sm:h-72 border border-black/30 z-0" />
+                {/* Border Frame - Bottom Right Position - White */}
+                <div className="absolute right-3 bottom-3 w-64 h-64 sm:w-72 sm:h-72 border-2 border-white z-0" />
               </div>
             </div>
 
@@ -90,52 +90,57 @@ export default function HeroSection({ onScrollToWork }: HeroSectionProps) {
           </div>
         </div>
 
-        {/* Decorative Zigzag - Right Side near image */}
-        <div className="absolute bottom-32 right-24 hidden lg:block">
-          <svg width="100" height="60" viewBox="0 0 100 60" fill="none" className="opacity-40">
-            <path d="M0 30 L20 10 L40 30 L60 10 L80 30 L100 10" stroke="black" strokeWidth="2" />
-          </svg>
+        {/* E-signature - Bottom Right */}
+        <div className="absolute bottom-35 right-15 hidden lg:block opacity-100">
+          <Image 
+            src="/aadvait-esign.png" 
+            alt="Aadvait Signature" 
+            width={100}
+            height={50}
+            className="w-auto h-auto"
+          />
         </div>
       </div>
 
-      {/* Right Side - Black - Desktop Only */}
-      <div className="hidden lg:flex lg:w-[40%] bg-black relative overflow-hidden">
-        {/* Image Container with Border - Bigger */}
-        <div className="flex items-center justify-center w-full px-12 z-10">
-          <div className="relative">
-            {/* Decorative Dots Pattern - Top Left Behind Frame - 15x15 grid */}
-            <div className="absolute -top-16 -left-16 z-0">
-              <div className="grid grid-cols-15 gap-2">
-                {Array.from({ length: 225 }).map((_, i) => (
-                  <div key={`top-${i}`} className="w-0.5 h-0.5 bg-orange-500/30 rounded-full" />
-                ))}
-              </div>
-            </div>
+      {/* Right Side - Dark Burgundy - Narrower - Desktop Only */}
+      <div className="hidden lg:block lg:w-[30%] bg-[#3f031c] relative overflow-hidden">
+      </div>
 
-            {/* Decorative Dots Pattern - Bottom Right Behind Frame - 15x15 grid */}
-            <div className="absolute -bottom-16 -right-16 z-0">
-              <div className="grid grid-cols-15 gap-2">
-                {Array.from({ length: 225 }).map((_, i) => (
-                  <div key={`bottom-${i}`} className="w-0.5 h-0.5 bg-orange-500/30 rounded-full" />
-                ))}
-              </div>
+      {/* Image Container - Centered on Split - Desktop Only */}
+      <div className="hidden lg:flex absolute left-[70%] top-1/2 -translate-x-1/2 -translate-y-1/2 z-20">
+        <div className="relative">
+          {/* Decorative Dots Pattern - Top Left Behind Frame - Burgundy - 15x15 grid */}
+          <div className="absolute -top-16 -left-16 z-0">
+            <div className="grid grid-cols-15 gap-2">
+              {Array.from({ length: 225 }).map((_, i) => (
+                <div key={`top-${i}`} className="w-0.5 h-0.5 bg-[#3f031c]/30 rounded-full" />
+              ))}
             </div>
-            
-            {/* Profile Image - Desktop - Much Bigger */}
-            <div className="relative w-96 h-96 xl:w-[28rem] xl:h-[28rem] overflow-hidden shadow-xl z-10">
-              <Image 
-                src="/aadvait-sf.jpg" 
-                alt="Aadvait Profile" 
-                width={448}
-                height={448}
-                className="w-full h-full object-cover"
-                priority
-              />
-            </div>
-
-            {/* Border Frame - Bottom Right Position */}
-            <div className="absolute right-6 bottom-6 w-96 h-96 xl:w-[28rem] xl:h-[28rem] border border-orange-500 z-0" />
           </div>
+
+          {/* Decorative Dots Pattern - Bottom Right Behind Frame - Beige - 15x15 grid */}
+          <div className="absolute -bottom-16 -right-16 z-0">
+            <div className="grid grid-cols-15 gap-2">
+              {Array.from({ length: 225 }).map((_, i) => (
+                <div key={`bottom-${i}`} className="w-0.5 h-0.5 bg-[#e8cca1]/30 rounded-full" />
+              ))}
+            </div>
+          </div>
+          
+          {/* Profile Image - Desktop - Much Bigger */}
+          <div className="relative w-96 h-96 xl:w-[28rem] xl:h-[28rem] overflow-hidden shadow-2xl z-10">
+            <Image 
+              src="/aadvait-hero.png" 
+              alt="Aadvait Profile" 
+              width={448}
+              height={448}
+              className="w-full h-full object-cover"
+              priority
+            />
+          </div>
+
+          {/* Border Frame - Bottom Right Position - White */}
+          <div className="absolute right-6 bottom-6 w-96 h-96 xl:w-[28rem] xl:h-[28rem] border-2 border-white z-0" />
         </div>
       </div>
     </section>
