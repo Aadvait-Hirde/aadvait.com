@@ -13,7 +13,7 @@ export default function HeroSection({ onScrollToWork }: HeroSectionProps) {
       {/* Left Side - Beige - Wider */}
       <div className="relative w-full lg:w-[70%] bg-[#e8cca1] flex flex-col overflow-hidden">
         {/* Main Content */}
-        <div className="flex-1 flex flex-col justify-center px-8 md:px-12 lg:px-16 lg:pr-64 xl:px-32 xl:pr-80 2xl:px-40 2xl:pr-96 py-24 lg:py-0">
+        <div className="flex-1 flex flex-col justify-center px-8 md:px-12 lg:px-16 lg:pr-64 xl:px-32 xl:pr-80 2xl:px-40 2xl:pr-96 pt-32 pb-24 lg:py-0">
           <div className="w-full max-w-xl mx-auto lg:mx-0 lg:ml-8 xl:ml-12">
             {/* Mobile/Tablet Image - Shows only below lg breakpoint */}
             <div className="lg:hidden mb-12 flex justify-center">
@@ -54,16 +54,16 @@ export default function HeroSection({ onScrollToWork }: HeroSectionProps) {
             </div>
 
             {/* Text Content */}
-            <h1 className="text-black text-5xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight text-left">
+            <h1 className="text-black text-5xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight text-center lg:text-left">
               Hey there, <br/>I'm <span className="text-[#3f031c]">Aadvait!</span>
             </h1>
             
-            <p className="text-black/90 text-lg md:text-lg md:pr-8 mb-12 text-left">
+            <p className="text-black/90 text-lg md:text-lg md:pr-8 mb-12 text-center lg:text-left">
             I'm a web developer and AI researcher with experience building scalable products and working with early-stage startups.
             </p>
 
             {/* CTA Button */}
-            <div className="text-left">
+            <div className="text-center lg:text-left">
               <div className="relative inline-block group mb-3">
                 {/* Frame - Bottom Left - Behind button */}
                 <div className="absolute -bottom-3 -right-3 w-full h-full border-2 border-white" />
