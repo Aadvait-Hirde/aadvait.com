@@ -9,7 +9,8 @@ import {
   NavigationMenu,
   HamburgerMenu,
   ScrollIndicator,
-  Logo
+  Logo,
+  SocialBar
 } from './components';
 
 export default function Home() {
@@ -61,6 +62,8 @@ export default function Home() {
         totalSections={totalSections}
         onSectionClick={scrollToSection}
       />
+
+      <SocialBar />
 
       {/* Page Sections */}
       <HeroSection onScrollToWork={() => scrollToSection(2)} />

@@ -7,8 +7,19 @@ interface LogoProps {
 }
 
 export default function Logo({ isScrolled }: LogoProps) {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   return (
-    <div className="fixed top-8 left-8 md:top-12 md:left-12 z-50 transition-all duration-300">
+    <button 
+      onClick={scrollToTop}
+      className="fixed top-8 left-8 md:top-12 md:left-12 z-50 transition-all duration-300 hover:opacity-70 active:scale-95 cursor-pointer"
+      aria-label="Back to top"
+    >
       {isScrolled ? (
         <Image 
           src="/a-favicon.png" 
@@ -26,7 +37,7 @@ export default function Logo({ isScrolled }: LogoProps) {
           className="transition-all duration-300"
         />
       )}
-    </div>
+    </button>
   );
 }
 

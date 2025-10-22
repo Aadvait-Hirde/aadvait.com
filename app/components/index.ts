@@ -9,4 +9,5 @@ export { default as NavigationMenu } from './NavigationMenu';
 export { default as HamburgerMenu } from './HamburgerMenu';
 export { default as ScrollIndicator } from './ScrollIndicator';
 export { default as Logo } from './Logo';
+export { default as SocialBar } from './SocialBar';
 

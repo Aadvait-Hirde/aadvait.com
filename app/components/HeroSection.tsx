@@ -10,10 +10,10 @@ export default function HeroSection({ onScrollToWork }: HeroSectionProps) {
   return (
     <section id="hero" className="relative min-h-screen flex flex-col lg:flex-row">
       {/* Left Side - Beige - Wider */}
-      <div className="relative w-full lg:w-[70%] bg-[#e8cca1] flex flex-col">
+      <div className="relative w-full lg:w-[70%] bg-[#e8cca1] flex flex-col overflow-hidden">
         {/* Main Content */}
-        <div className="flex-1 flex flex-col justify-center px-8 md:px-12 lg:px-16 xl:px-32 2xl:px-40 py-24 lg:py-0">
-          <div className="w-full max-w-xl mx-auto lg:mx-0 lg:ml-12">
+        <div className="flex-1 flex flex-col justify-center px-8 md:px-12 lg:px-16 lg:pr-64 xl:px-32 xl:pr-80 2xl:px-40 2xl:pr-96 py-24 lg:py-0">
+          <div className="w-full max-w-xl mx-auto lg:mx-0 lg:ml-8 xl:ml-12">
             {/* Mobile/Tablet Image - Shows only below lg breakpoint */}
             <div className="lg:hidden mb-12 flex justify-center">
               <div className="relative">
@@ -53,39 +53,36 @@ export default function HeroSection({ onScrollToWork }: HeroSectionProps) {
             </div>
 
             {/* Text Content */}
-            <h1 className="text-black text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight text-left">
-              Full-stack
-              <br />
-              Developer.
+            <h1 className="text-black text-5xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight text-left">
+              Full-Stack Developer
             </h1>
             
-            <p className="text-black/90 text-lg md:text-xl mb-12 text-left">
-              I like to craft solid and scalable frontend products
-              with great user experiences.
+            <p className="text-black/90 text-lg md:text-lg md:pr-8 mb-12 text-left">
+            I'm a web developer and AI researcher with experience building scalable products and working with early-stage startups.
             </p>
-
-            {/* Feature Points */}
-            <div className="flex flex-col md:flex-row gap-8 mb-12">
-              <div className="flex-1">
-                <p className="text-black/80 text-sm md:text-base text-left">
-                  Highly skilled at progressive enhancement, design systems & UI Engineering.
-                </p>
-              </div>
-              <div className="flex-1">
-                <p className="text-black/80 text-sm md:text-base text-left">
-                  Proven experience building successful products for clients across several countries.
-                </p>
-              </div>
-            </div>
 
             {/* CTA Button */}
             <div className="text-left">
-              <button 
-                onClick={onScrollToWork}
-                className="inline-block bg-black text-white px-8 py-4 font-semibold hover:bg-black/80 transition-colors cursor-pointer"
-              >
-                View My Work
-              </button>
+              <div className="relative inline-block group mb-3">
+                {/* Frame - Bottom Left - Behind button */}
+                <div className="absolute -bottom-3 -right-3 w-full h-full border-2 border-white" />
+                <button 
+                  onClick={onScrollToWork}
+                  className="relative bg-black text-white px-8 py-4 font-semibold hover:scale-105 active:scale-95 transition-all cursor-pointer"
+                >
+                  Work & Projects
+                </button>
+              </div>
+              <div className="relative inline-block group mb-3 ml-9">
+                {/* Frame - Bottom Left - Behind button */}
+                <div className="absolute -bottom-3 -right-3 w-full h-full border-2 border-white" />
+                <button 
+                  onClick={onScrollToWork}
+                  className="relative bg-black text-white px-8 py-4 font-semibold hover:scale-105 active:scale-95 transition-all cursor-pointer"
+                >
+                  Resume
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -107,7 +104,7 @@ export default function HeroSection({ onScrollToWork }: HeroSectionProps) {
       </div>
 
       {/* Image Container - Centered on Split - Desktop Only */}
-      <div className="hidden lg:flex absolute left-[70%] top-1/2 -translate-x-1/2 -translate-y-1/2 z-20">
+      <div className="hidden lg:flex absolute left-[70%] top-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
         <div className="relative">
           {/* Decorative Dots Pattern - Top Left Behind Frame - Burgundy - 15x15 grid */}
           <div className="absolute -top-16 -left-16 z-0">
