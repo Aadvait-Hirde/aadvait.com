@@ -6,6 +6,7 @@ import {
   AboutSection,
   WorkSection,
   ContactSection,
+  Footer,
   NavigationMenu,
   HamburgerMenu,
   ScrollIndicator,
@@ -71,6 +72,9 @@ export default function Home() {
       <AboutSection />
       <WorkSection />
       <ContactSection />
+      
+      {/* Footer */}
+      <Footer />
     </div>
   );
 }

@@ -3,6 +3,7 @@ export { default as HeroSection } from './HeroSection';
 export { default as AboutSection } from './AboutSection';
 export { default as WorkSection } from './WorkSection';
 export { default as ContactSection } from './ContactSection';
+export { default as Footer } from './Footer';
 
 // Navigation Components
 export { default as NavigationMenu } from './NavigationMenu';
