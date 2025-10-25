@@ -1,18 +1,18 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import {
-  HeroSection,
-  AboutSection,
-  WorkSection,
-  ContactSection,
-  Footer,
-  NavigationMenu,
-  HamburgerMenu,
-  ScrollIndicator,
-  Logo,
-  SocialBar
-} from './components';
+import HeroSection from '@/components/HeroSection';
+import AboutSection from '@/components/AboutSection';
+import WorkSection from '@/components/WorkSection';
+import ExperienceSection from '@/components/ExperienceSection';
+import ResearchSection from '@/components/ResearchSection';
+import ContactSection from '@/components/ContactSection';
+import Footer from '@/components/Footer';
+import NavigationMenu from '@/components/NavigationMenu';
+import HamburgerMenu from '@/components/HamburgerMenu';
+import ScrollIndicator from '@/components/ScrollIndicator';
+import Logo from '@/components/Logo';
+import SocialBar from '@/components/SocialBar';
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState(0);
@@ -71,6 +71,8 @@ export default function Home() {
       <HeroSection onScrollToWork={() => scrollToSection(2)} />
       <AboutSection />
       <WorkSection />
+      <ExperienceSection />
+      <ResearchSection />
       <ContactSection />
       
       {/* Footer */}
