@@ -20,7 +20,7 @@ export default function AboutSection() {
       <svg className="absolute bottom-20 right-10 hidden lg:block" width="180" height="60" viewBox="0 0 180 60">
         <path 
           fill="none" 
-          stroke="#3f031c" 
+          stroke="#3f031c"
           strokeMiterlimit="50" 
           strokeWidth="2" 
           d="M0 30l15.343 16.136 15.343-16.136 15.341 16.136 15.343-16.136 15.343 16.136 15.343-16.136 15.344 16.136 15.345-16.136"

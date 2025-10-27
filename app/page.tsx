@@ -18,7 +18,7 @@ export default function Home() {
   const [activeSection, setActiveSection] = useState(0);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const totalSections = 4; // Hero, About, Work, Contact
+  const totalSections = 6; // Hero, About, Work, Experience, Research, Contact
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,20 +28,36 @@ export default function Home() {
       // Check if scrolled past first section
       setIsScrolled(scrollPosition > windowHeight * 0.8);
       
-      // Calculate active section based on scroll position + half viewport
-      const sectionIndex = Math.round(scrollPosition / windowHeight);
-      setActiveSection(Math.min(sectionIndex, totalSections - 1));
+      // Get all section elements
+      const sections = ['hero', 'about', 'work', 'experience', 'research', 'contact'];
+      let currentSection = 0;
+      
+      // Find which section is currently in view
+      sections.forEach((sectionId, index) => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          const rect = element.getBoundingClientRect();
+          // If section top is in the upper half of viewport, it's active
+          if (rect.top <= windowHeight / 2 && rect.bottom >= windowHeight / 2) {
+            currentSection = index;
+          }
+        }
+      });
+      
+      setActiveSection(currentSection);
     };
 
     window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Call once on mount
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const scrollToSection = (index: number) => {
-    window.scrollTo({
-      top: index * window.innerHeight,
-      behavior: 'smooth'
-    });
+    const sections = ['hero', 'about', 'work', 'experience', 'research', 'contact'];
+    const element = document.getElementById(sections[index]);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   };
 
   return (
