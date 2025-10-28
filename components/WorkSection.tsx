@@ -33,7 +33,7 @@ export default function WorkSection() {
         "Fine-tuned BERT models with Transformers for Arabic-English sentiment analysis on telecom customer tickets, achieving 93% production classification accuracy.",
         "Deployed ML models via Flask REST APIs on IBM Cloud Foundry with Redis caching, creating documentation for internal teams to integrate inference endpoints."
       ]
-    }
+    },
   ];
 
   return (
@@ -59,7 +59,7 @@ export default function WorkSection() {
       </div>
 
       {/* Decorative stepped lines - bottom right */}
-      <svg className="absolute bottom-20 right-10 hidden lg:block" width="120" height="180" viewBox="0 0 120 180">
+      <svg className="absolute bottom-20 right-15 hidden lg:block" width="120" height="180" viewBox="0 0 120 190">
         <path 
           fill="none" 
           stroke="#3f031c" 
@@ -80,7 +80,7 @@ export default function WorkSection() {
 
       <div className="max-w-5xl mx-auto relative z-10">
         <h2 className="text-5xl md:text-6xl font-bold text-[#3f031c] mb-16 text-center">
-          Work Experience
+          Work
         </h2>
 
         <div className="space-y-0">

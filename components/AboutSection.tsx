@@ -6,7 +6,7 @@ export default function AboutSection() {
   return (
     <section id="about" className="relative min-h-screen bg-white flex items-center justify-center overflow-hidden py-20 px-8 md:px-12">
       {/* Decorative stepped lines - top left */}
-      <svg className="absolute top-20 left-10 hidden lg:block" width="120" height="180" viewBox="0 0 120 180">
+      <svg className="absolute top-20 left-10 hidden lg:block" width="120" height="180" viewBox="0 0 120 190">
         <path 
           fill="none" 
           stroke="#e8cca1" 

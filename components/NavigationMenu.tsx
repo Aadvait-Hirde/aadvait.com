@@ -77,6 +77,13 @@ export default function NavigationMenu({ isOpen, onClose }: NavigationMenuProps)
           Work
         </a>
         <a 
+          href="#research" 
+          onClick={(e) => handleNavClick(e, '#research')} 
+          className="text-white text-4xl md:text-5xl font-bold hover:text-[#e8cca1] hover:scale-110 transition-all duration-300"
+        >
+          Research
+        </a>
+        <a 
           href="#experience" 
           onClick={(e) => handleNavClick(e, '#experience')} 
           className="text-white text-4xl md:text-5xl font-bold hover:text-[#e8cca1] hover:scale-110 transition-all duration-300"
@@ -84,11 +91,11 @@ export default function NavigationMenu({ isOpen, onClose }: NavigationMenuProps)
           Experience
         </a>
         <a 
-          href="#research" 
-          onClick={(e) => handleNavClick(e, '#research')} 
+          href="#projects" 
+          onClick={(e) => handleNavClick(e, '#projects')} 
           className="text-white text-4xl md:text-5xl font-bold hover:text-[#e8cca1] hover:scale-110 transition-all duration-300"
         >
-          Research
+          Projects
         </a>
         <a 
           href="#contact" 

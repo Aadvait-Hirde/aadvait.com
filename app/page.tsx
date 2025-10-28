@@ -4,8 +4,9 @@ import { useState, useEffect } from 'react';
 import HeroSection from '@/components/HeroSection';
 import AboutSection from '@/components/AboutSection';
 import WorkSection from '@/components/WorkSection';
-import ExperienceSection from '@/components/ExperienceSection';
 import ResearchSection from '@/components/ResearchSection';
+import ExperienceSection from '@/components/ExperienceSection';
+import ProjectsSection from '@/components/ProjectsSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
 import NavigationMenu from '@/components/NavigationMenu';
@@ -18,7 +19,7 @@ export default function Home() {
   const [activeSection, setActiveSection] = useState(0);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const totalSections = 6; // Hero, About, Work, Experience, Research, Contact
+  const totalSections = 7; // Hero, About, Work, Research, Experience, Projects, Contact
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,7 +30,7 @@ export default function Home() {
       setIsScrolled(scrollPosition > windowHeight * 0.8);
       
       // Get all section elements
-      const sections = ['hero', 'about', 'work', 'experience', 'research', 'contact'];
+      const sections = ['hero', 'about', 'work', 'research', 'experience', 'projects', 'contact'];
       let currentSection = 0;
       
       // Find which section is currently in view
@@ -53,7 +54,7 @@ export default function Home() {
   }, []);
 
   const scrollToSection = (index: number) => {
-    const sections = ['hero', 'about', 'work', 'experience', 'research', 'contact'];
+    const sections = ['hero', 'about', 'work', 'research', 'experience', 'projects', 'contact'];
     const element = document.getElementById(sections[index]);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -87,8 +88,9 @@ export default function Home() {
       <HeroSection onScrollToWork={() => scrollToSection(2)} />
       <AboutSection />
       <WorkSection />
-      <ExperienceSection />
       <ResearchSection />
+      <ExperienceSection />
+      <ProjectsSection />
       <ContactSection />
       
       {/* Footer */}
