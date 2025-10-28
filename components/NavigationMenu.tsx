@@ -105,7 +105,7 @@ export default function NavigationMenu({ isOpen, onClose }: NavigationMenuProps)
           Contact
         </a>
         <a 
-          href="/Aadvait-Hirde-Resume.pdf"
+          href="/documents/Aadvait-Hirde-Resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="text-white text-4xl md:text-5xl font-bold hover:text-[#e8cca1] hover:scale-110 transition-all duration-300"

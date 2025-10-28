@@ -127,7 +127,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <a 
-                  href="/Aadvait-Hirde-Resume.pdf" 
+                  href="/documents/Aadvait-Hirde-Resume.pdf" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-sm text-gray-300 hover:text-[#e8cca1] transition-colors"

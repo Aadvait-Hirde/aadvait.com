@@ -8,7 +8,7 @@ export default function SocialBar() {
     { name: 'LinkedIn', icon: '/icons/linkedin.svg', url: 'https://linkedin.com/in/aadvait-hirde' },
     { name: 'Twitter', icon: '/icons/twitter.svg', url: 'https://twitter.com/aadvaitn' },
     { name: 'Email', icon: '/icons/mail.svg', url: 'mailto:aadvait.cr@gmail.com' },
-    { name: 'Resume', icon: '/icons/resume.svg', url: '/Aadvait-Hirde-Resume.pdf' },
+    { name: 'Resume', icon: '/icons/resume.svg', url: '/documents/Aadvait-Hirde-Resume.pdf' },
   ];
 
   return (

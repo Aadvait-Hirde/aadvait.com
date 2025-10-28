@@ -53,7 +53,7 @@ export default function AboutSection() {
               {/* Collage Image */}
               <div className="relative w-full max-w-lg">
                 <Image 
-                  src="/aadvait-collage.png" 
+                  src="/images/about/aadvait-collage.png" 
                   alt="Aadvait Collage" 
                   width={600}
                   height={600}

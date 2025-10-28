@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: "Aadvait Hirde",
   description: "Aadvait's portfolio website! I'm a web developer and AI researcher with experience building scalable products and working with early-stage startups.",
   icons: {
-    icon: '/a-favicon.png',
+    icon: '/images/hero/a-favicon.png',
   },
 };
 
@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/a-favicon.png" />
+        <link rel="icon" href="/images/hero/a-favicon.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>

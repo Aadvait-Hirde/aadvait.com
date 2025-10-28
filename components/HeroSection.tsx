@@ -39,7 +39,7 @@ export default function HeroSection({ onScrollToWork }: HeroSectionProps) {
                 {/* Profile Image - Mobile */}
                 <div className="relative w-64 h-64 sm:w-72 sm:h-72 overflow-hidden shadow-xl z-10">
                   <Image 
-                    src="/aadvait-hero.png" 
+                    src="/images/hero/aadvait-hero.png" 
                     alt="Aadvait Profile" 
                     width={320}
                     height={320}
@@ -78,7 +78,7 @@ export default function HeroSection({ onScrollToWork }: HeroSectionProps) {
                  {/* Frame - Bottom Left - Behind button */}
                  <div className="absolute -bottom-3 -right-3 w-full h-full border-2 border-white" />
                  <a 
-                   href="/Aadvait-Hirde-Resume.pdf"
+                   href="/documents/Aadvait-Hirde-Resume.pdf"
                    target="_blank"
                    rel="noopener noreferrer"
                    className="relative bg-black text-white px-8 py-4 font-semibold hover:scale-105 active:scale-95 transition-all cursor-pointer inline-block"
@@ -96,7 +96,7 @@ export default function HeroSection({ onScrollToWork }: HeroSectionProps) {
          {/* E-signature - Bottom Right */}
         <div className="absolute bottom-35 right-15 hidden lg:block opacity-100">
           <Image 
-            src="/aadvait-esign.png" 
+            src="/images/hero/aadvait-esign.png" 
             alt="Aadvait Signature" 
             width={100}
             height={50}
@@ -133,7 +133,7 @@ export default function HeroSection({ onScrollToWork }: HeroSectionProps) {
           {/* Profile Image - Desktop - Much Bigger */}
           <div className="relative w-96 h-96 xl:w-[28rem] xl:h-[28rem] overflow-hidden shadow-2xl z-10">
             <Image 
-              src="/aadvait-hero.png" 
+              src="/images/hero/aadvait-hero.png" 
               alt="Aadvait Profile" 
               width={448}
               height={448}

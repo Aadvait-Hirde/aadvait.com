@@ -10,7 +10,7 @@ export default function ExperienceSection() {
       startDate: "Feb 2025",
       endDate: "Present",
       location: "Bloomington, IN",
-      logo: "/ktp-logo.png",
+      logo: "/images/work/ktp-logo.png",
       description: [
         "Founded and scaled the Indiana University chapter of Kappa Theta Pi, the nation's premier professional technology fraternity, leading 14 executive board members and 73 active members across technical and business disciplines",
         "Built an integrated recruitment system using Airtable, n8n, and Zapier automations, processing 200+ applicants per semester and centralizing evaluation, attendance, and decision workflows",
@@ -25,7 +25,7 @@ export default function ExperienceSection() {
       startDate: "Feb 2025",
       endDate: "Sep 2025",
       location: "Bloomington, IN",
-      logo: "/lca-logo.jpg",
+      logo: "/images/work/lca-logo.jpg",
       description: [
         "Managed a 10-member technical team through the planning and development of a custom, local LLaMA chatbot and client-facing support platform",
         "Designed and prototyped the frontend experience using Framer, focusing on clean UI and intuitive interaction flows",

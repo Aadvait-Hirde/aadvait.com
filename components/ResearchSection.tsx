@@ -17,9 +17,9 @@ export default function ResearchSection() {
         "Developing comparative evaluations across U.S., EU, and Chinese model providers to study dataset bias and security drift",
         "Supporting DSAIL's collaboration with IU's Open Source Ecosystems team to produce reproducible, open-access benchmarks for the research community"
       ],
-      image: "/Paper-2.png",
+      image: "/images/research/Paper-2.png",
       links: [
-        { label: "Presentation", url: "/DSAIL.pdf", icon: Presentation }
+        { label: "Presentation", url: "/documents/DSAIL.pdf", icon: Presentation }
       ]
     },
     {
@@ -34,11 +34,11 @@ export default function ResearchSection() {
         "Featured in SSRN Prebit Journal and Connected Papers, where it ranked as a central node in the “AI for Financial Forecasting” cluster",
         "Cited by the University of Southampton (UK) and referenced in follow-up work on financial sentiment modeling"
       ],
-      image: "/Paper-1.png",
+      image: "/images/research/Paper-1.png",
       links: [
         { label: "IEEE", url: "https://ieeexplore.ieee.org/document/9953018", icon: BookOpen },
         { label: "Citations", url: "https://eprints.soton.ac.uk/497109/1/Essays_on_Learning_and_Memory_in_Virtual_Currency_Markets_Shuyue_Li.pdf", icon: Quote },
-        { label: "PDF", url: "/Paper-1.pdf", icon: FileText }
+        { label: "PDF", url: "/documents/Paper-1.pdf", icon: FileText }
       ]
     },
   ];

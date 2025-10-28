@@ -22,7 +22,7 @@ export default function Logo({ isScrolled }: LogoProps) {
     >
       {isScrolled ? (
         <Image 
-          src="/a-favicon.png" 
+          src="/images/hero/a-favicon.png" 
           alt="Aadvait Logo" 
           width={40} 
           height={40}
@@ -30,7 +30,7 @@ export default function Logo({ isScrolled }: LogoProps) {
         />
       ) : (
         <Image 
-          src="/aadvait-logo.png" 
+          src="/images/hero/aadvait-logo.png" 
           alt="Aadvait" 
           width={120} 
           height={40}
