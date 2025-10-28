@@ -37,43 +37,23 @@ export default function WorkSection() {
   ];
 
   return (
-    <section id="work" className="relative min-h-screen bg-white py-20 px-8 md:px-12 overflow-hidden">
+    <section id="work" className="relative min-h-screen bg-[#f5f5f5] py-20 px-8 md:px-12 overflow-hidden">
       {/* Decorative zigzag lines - top left */}
-      <svg className="absolute top-20 left-10 hidden lg:block" width="180" height="60" viewBox="0 0 180 60">
+      <svg className="absolute top-20 left-10 hidden lg:block opacity-40" width="180" height="60" viewBox="0 0 180 60">
         <path 
           fill="none" 
-          stroke="#e8cca1" 
+          stroke="#3f031c" 
           strokeMiterlimit="50" 
           strokeWidth="2" 
           d="M0 30l15.343 16.136 15.343-16.136 15.341 16.136 15.343-16.136 15.343 16.136 15.343-16.136 15.344 16.136 15.345-16.136"
         />
       </svg>
 
-      {/* Decorative dots grid - top right */}
-      <div className="absolute top-10 right-20 hidden lg:block opacity-30">
-        <div className="grid grid-cols-8 gap-2">
-          {Array.from({ length: 64 }).map((_, i) => (
-            <div key={`dot-tr-${i}`} className="w-1 h-1 bg-[#3f031c] rounded-full" />
-          ))}
-        </div>
-      </div>
-
-      {/* Decorative stepped lines - bottom right */}
-      <svg className="absolute bottom-20 right-15 hidden lg:block" width="120" height="180" viewBox="0 0 120 190">
-        <path 
-          fill="none" 
-          stroke="#3f031c" 
-          strokeMiterlimit="50" 
-          strokeWidth="2" 
-          d="M120 180v-22.26h-22.26v-22.26h-22.26v-22.26h-22.26v-22.26h-22.26v-22.26h-22.26"
-        />
-      </svg>
-
       {/* Decorative dots grid - bottom left */}
-      <div className="absolute bottom-10 left-20 hidden lg:block opacity-30">
-        <div className="grid grid-cols-8 gap-2">
-          {Array.from({ length: 64 }).map((_, i) => (
-            <div key={`dot-bl-${i}`} className="w-1 h-1 bg-[#e8cca1] rounded-full" />
+      <div className="absolute bottom-20 left-20 hidden lg:block opacity-20">
+        <div className="grid grid-cols-15 gap-2">
+          {Array.from({ length: 225 }).map((_, i) => (
+            <div key={`dot-bl-${i}`} className="w-0.5 h-0.5 bg-[#e8cca1] rounded-full" />
           ))}
         </div>
       </div>

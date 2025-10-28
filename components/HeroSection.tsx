@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import TechStackMarquee from './TechStackMarquee';
+import TextType from './TextType';
 
 interface HeroSectionProps {
   onScrollToWork: () => void;
@@ -54,8 +55,21 @@ export default function HeroSection({ onScrollToWork }: HeroSectionProps) {
             </div>
 
             {/* Text Content */}
-            <h1 className="text-black text-5xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight text-center lg:text-left">
-              Hey there, <br/>I'm <span className="text-[#3f031c]">Aadvait!</span>
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight text-center lg:text-left">
+              <span className="text-black">Hey there,</span>
+              <TextType 
+                text="I'm Aadvait!"
+                as="span"
+                typingSpeed={80}
+                loop={false}
+                showCursor={true}
+                cursorCharacter="_"
+                cursorClassName="text-[#3f031c]"
+                cursorBlinkDuration={0.5}
+                variableSpeed={{ min: 50, max: 100 }}
+                startOnVisible={true}
+                className="text-[#3f031c]"
+              />
             </h1>
             
             <p className="text-black/90 text-lg md:text-lg md:pr-8 mb-12 text-center lg:text-left">

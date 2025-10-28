@@ -27,7 +27,7 @@ export default function ProjectCard({
   return (
     <div className="bg-white shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden group hover:-translate-y-2 border-t-4 border-[#e8cca1] flex flex-col h-full">
       {/* Image - Top section */}
-      <div className="w-full h-64 relative overflow-hidden bg-gray-100 shrink-0">
+      <div className="w-full h-56 relative overflow-hidden bg-gray-100 shrink-0">
         <Image
           src={image}
           alt={title}

@@ -51,21 +51,22 @@ export default function ResearchSection() {
         <div className="w-full lg:w-[75%] bg-[#3f031c]" />
       </div>
 
-      {/* Decorative elements */}
-      <svg className="absolute top-20 right-10 hidden lg:block z-0" width="120" height="180" viewBox="0 0 120 180">
+      {/* Decorative stepped lines - top right */}
+      <svg className="absolute top-20 right-10 hidden lg:block z-0 opacity-40" width="120" height="180" viewBox="0 0 120 190">
         <path 
           fill="none" 
-          stroke="#3f031c" 
+          stroke="#e8cca1" 
           strokeMiterlimit="50" 
           strokeWidth="2" 
           d="M0 0v22.26h22.26v22.26h22.26v22.26h22.26v22.26h22.26v22.26h22.26"
         />
       </svg>
 
-      <div className="absolute bottom-10 left-20 hidden lg:block opacity-30 z-0">
-        <div className="grid grid-cols-8 gap-2">
-          {Array.from({ length: 64 }).map((_, i) => (
-            <div key={`dot-${i}`} className="w-1 h-1 bg-[#e8cca1] rounded-full" />
+      {/* Decorative dots grid - bottom left (burgundy) */}
+      <div className="absolute bottom-20 left-20 hidden lg:block opacity-15 z-0">
+        <div className="grid grid-cols-15 gap-2">
+          {Array.from({ length: 225 }).map((_, i) => (
+            <div key={`dot-${i}`} className="w-0.5 h-0.5 bg-[#3f031c] rounded-full" />
           ))}
         </div>
       </div>

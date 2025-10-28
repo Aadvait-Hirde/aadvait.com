@@ -37,9 +37,9 @@ export default function ExperienceSection() {
   ];
 
   return (
-    <section id="experience" className="relative min-h-screen bg-[#f5f5f5] py-20 px-8 md:px-12 overflow-hidden">
-      {/* Decorative elements */}
-      <svg className="absolute top-20 left-10 hidden lg:block opacity-30" width="120" height="180" viewBox="0 0 120 180">
+    <section id="experience" className="relative min-h-screen bg-white py-20 px-8 md:px-12 overflow-hidden">
+      {/* Decorative stepped lines - top left */}
+      <svg className="absolute top-20 left-10 hidden lg:block opacity-40" width="120" height="180" viewBox="0 0 120 190">
         <path 
           fill="none" 
           stroke="#e8cca1" 
@@ -49,10 +49,11 @@ export default function ExperienceSection() {
         />
       </svg>
 
-      <div className="absolute bottom-10 right-20 hidden lg:block opacity-30">
-        <div className="grid grid-cols-8 gap-2">
-          {Array.from({ length: 64 }).map((_, i) => (
-            <div key={`dot-${i}`} className="w-1 h-1 bg-[#3f031c] rounded-full" />
+      {/* Decorative dots grid - bottom right */}
+      <div className="absolute bottom-20 right-20 hidden lg:block opacity-20">
+        <div className="grid grid-cols-15 gap-2">
+          {Array.from({ length: 225 }).map((_, i) => (
+            <div key={`dot-${i}`} className="w-0.5 h-0.5 bg-[#3f031c] rounded-full" />
           ))}
         </div>
       </div>
