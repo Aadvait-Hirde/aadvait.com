@@ -107,10 +107,10 @@ export default function ProjectsSection() {
 
   return (
     <section id="projects" className="relative min-h-screen overflow-hidden py-20 px-8 md:px-12">
-      {/* Duo-tone background - 25% beige on left, 75% burgundy on right */}
+      {/* Duo-tone background - 25% beige on left, 75% burgundy on right (desktop) / burgundy only (mobile) */}
       <div className="absolute inset-0 flex">
-        <div className="hidden lg:block lg:w-[75%] bg-[#3f031c]" />
-        <div className="w-full lg:w-[25%] bg-[#e8cca1]" />
+        <div className="w-full lg:w-[75%] bg-[#3f031c]" />
+        <div className="hidden lg:block lg:w-[25%] bg-[#e8cca1]" />
       </div>
 
       {/* Decorative zigzag lines - top left */}

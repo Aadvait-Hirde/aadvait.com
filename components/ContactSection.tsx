@@ -47,7 +47,7 @@ export default function ContactSection() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
           {/* Left side - Contact Information */}
-          <div className="text-center lg:text-left">
+          <div>
             <h3 className="text-3xl font-bold text-[#3f031c] mb-6">
               Contact Information
             </h3>
@@ -55,7 +55,7 @@ export default function ContactSection() {
               Feel free to reach out to me for collaboration, opportunities, or just to say hello. I'm always open to discussing new projects and ideas.
             </p>
 
-            <div className="space-y-6 flex flex-col items-center lg:items-start">
+            <div className="space-y-6">
               {/* Email */}
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-[#e8cca1]/70 rounded-lg flex items-center justify-center shrink-0">
