@@ -107,16 +107,16 @@ export default function HeroSection({ onScrollToWork }: HeroSectionProps) {
            </div>
          </div>
 
-         {/* E-signature - Bottom Right */}
-        <div className="absolute bottom-35 right-15 hidden lg:block opacity-100">
-          <Image 
-            src="/images/hero/aadvait-esign.png" 
-            alt="Aadvait Signature" 
-            width={100}
-            height={50}
-            className="w-auto h-auto"
-          />
-        </div>
+        {/* E-signature - Bottom Right - Positioned relative to the bottom */}
+       <div className="absolute bottom-8 right-16 xl:bottom-12 xl:right-20 hidden lg:block opacity-100 z-20">
+         <Image 
+           src="/images/hero/aadvait-esign.png" 
+           alt="Aadvait Signature" 
+           width={100}
+           height={50}
+           className="w-auto h-auto"
+         />
+       </div>
       </div>
 
       {/* Right Side - Dark Burgundy - Narrower - Desktop Only */}

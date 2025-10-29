@@ -49,7 +49,7 @@ export default function ProjectCard({
             <p className="text-sm font-semibold text-gray-500 mb-2">Key Achievements</p>
             <ul className="space-y-1">
               {achievements.map((achievement, index) => (
-                <li key={index} className="text-sm text-gray-700 flex">
+                <li key={index} className="text-sm text-gray-700 flex text-justify">
                   <span className="mr-2 text-[#e8cca1] font-bold">•</span>
                   <span>{achievement}</span>
                 </li>
