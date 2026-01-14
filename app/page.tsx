@@ -13,7 +13,7 @@ export default function Home() {
               rotationInterval={3000}
               auto={true}
               loop={true}
-            />
+        />
           </p>
           
           <p className="text-gray-700 leading-relaxed mb-8">
@@ -39,19 +39,19 @@ export default function Home() {
           <div className="flex gap-4">
             <a
               href="/documents/Aadvait-Hirde-Resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
+            target="_blank"
+            rel="noopener noreferrer"
               className="px-4 py-2 border border-gray-300 rounded hover:bg-gray-50 transition-colors flex items-center gap-2"
             >
               <span>Download Resume</span>
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
               </svg>
-            </a>
-            <a
+          </a>
+          <a
               href="https://calendly.com/aadvait-hirde"
-              target="_blank"
-              rel="noopener noreferrer"
+            target="_blank"
+            rel="noopener noreferrer"
               className="px-4 py-2 border border-gray-300 rounded hover:bg-gray-50 transition-colors flex items-center gap-2"
             >
               <span>Book a call</span>
@@ -74,7 +74,17 @@ export default function Home() {
                     <p className="text-gray-600">{role.position}</p>
                   </div>
                 </div>
-                <p className="text-gray-700 text-sm">{role.description}</p>
+                <p className="text-gray-700 text-sm mb-2">{role.description}</p>
+                {role.url && (
+                  <a 
+                    href={role.url} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="text-sm text-gray-600 hover:text-black hover:underline"
+                  >
+                    {role.url}
+                  </a>
+                )}
               </div>
             ))}
           </div>

@@ -31,10 +31,18 @@ export const workExperiences = [
 
 export const experienceRoles = [
   {
+    company: "Kappa Theta Pi National",
+    position: "National Director of Correspondence",
+    startDate: "Dec 2025",
+    endDate: "Present",
+    location: "Bloomington, IN",
+    description: []
+  },
+  {
     company: "Kappa Theta Pi — Alpha Eta",
     position: "Founder & President",
     startDate: "Feb 2025",
-    endDate: "Present",
+    endDate: "Dec 2025",
     location: "Bloomington, IN",
     description: [
       "Founded and scaled the Indiana University chapter of Kappa Theta Pi, the nation's premier professional technology fraternity, leading 14 executive board members and 73 active members across technical and business disciplines",
@@ -42,6 +50,19 @@ export const experienceRoles = [
       "Oversaw all executive operations from governance and bylaws to brand design, mentorship systems, and long-term strategic planning for future pledge classes. Includes internal operations such as rush, budgeting, marketing, sponsorships, curriculum etc",
       "Onboarded Humana Insurance as a Silver Corporate Partner, establishing recurring sponsorship and professional development opportunities for members",
       "Organized cross-campus case competitions, startup panels, and technical workshops with Luddy and Kelley organizations, positioning KTP as a central tech-leadership hub on campus"
+    ]
+  },
+  {
+    company: "Antryb",
+    position: "Founder & CEO",
+    startDate: "Feb 2025",
+    endDate: "Dec 2025",
+    location: "Bloomington, IN",
+    description: [
+      "Building a voice-first context engineering tool that extracts screen context, asks targeted questions, and generates perfect prompts or outputs for any AI—without leaving your current app",
+      "Developed the core product using Swift for macOS, implementing local speech-to-text processing, screen capture analysis, and system-wide keyboard shortcuts for instant activation",
+      "Designed and shipped a marketing site with Next.js 15, TypeScript, Tailwind CSS, and Framer Motion, featuring interactive product demos and animated UI components",
+      "Secured backing from executives at KPMG, Pfizer, and NCR during pre-launch phase, currently building private beta waitlist"
     ]
   },
   {
@@ -62,13 +83,25 @@ export const experienceRoles = [
 
 export const currentRoles = [
   {
-    company: "Antryb",
+    company: "Lever",
     position: "Founder & CEO",
-    description: "Building a high-performance email + calendar client that unifies Gmail and Outlook with AI-powered triage. Shipped MVP in 2 weeks, currently in private beta."
+    description: "Building a voice-first context engineering tool that extracts screen context, asks targeted questions, and generates perfect prompts or outputs for any AI, without leaving your current app.",
+    url: "https://lever.sh"
+  },
+  {
+    company: "NSF-SAFE OSE Project",
+    position: "Research Engineer",
+    description: "Architecting and deploying an automated vulnerability scanning pipeline for Jetstream2, NSF's national research cloud, scanning 118+ public VM images using Trivy for CVE detection. Built parallel infrastructure provisioning system with OpenStack APIs and deploying MySQL database for centralized vulnerability data analysis across research disciplines."
   },
 ];
 
 export const researchProjects = [
+  {
+    title: "NSF-SAFE OSE Project",
+    duration: "Aug 2025 - Present",
+    description: "Built an automated vulnerability scanning pipeline for Jetstream2, scanning 118+ public VM images with Trivy and storing results in a centralized database for cross-image analysis. Extended it to map vulnerabilities to running research workloads and detect non-CVE dependency risks using Semgrep and ecosystem APIs.",
+    links: []
+  },
   {
     title: "Benchmarking LLM-Generated Code Security via Static Analysis and CWE Scanning",
     duration: "Aug 2025 - Present",
